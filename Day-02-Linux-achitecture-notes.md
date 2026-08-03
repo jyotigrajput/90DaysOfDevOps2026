@@ -1,31 +1,31 @@
-##Core components of Linux 
+Core components of Linux 
+---
 1. **Kernal space** - Highly priviledge space , directly communicate with OS 
 2. **User space** - It is for applications like bash, ediror,  Un priviledge space , can not directly communicate with OS, required systemcall to communicate with kernal space
 3. **init/systemd** - 
 
--- 
-
 init - tradition linux initalization system & first process start during boot using runlevel
 
-systemd - Modern linux init system 
+Systemd - Modern linux init system 
         - manage sytem services,dependencies & system resource
         - Manage proccess manually using **systemctl** 
---
 
-##What systemd does and why it matters
+
+What systemd does and why it matters
+--
 - PID 1/first process
 - Service and system manager
 - Manage services after kernal reboots
 - Auto restart failed services
 
--- 
-
-##How process are created and managed ?
+How process are created and managed ?
+--
 - Running active program/application
 - for ex. executing script, run command
 - Every process has PID, parent process, memory state
 
-  ** Process creation proccess"
+  ** Process creation proccess **
+  ```
                   User runs command (for ex ls in Bash)
                             |
                   Parent shell create new [process (Fork)  --> Child process created for ls
@@ -35,7 +35,7 @@ systemd - Modern linux init system
                   kernal will assign PID
                           |
                   process start running
-
+```
 
 **Process State**
 1. Running- Currently in progress
@@ -44,6 +44,7 @@ systemd - Modern linux init system
 4. Stopped - Stopped/pause for signal
 
 **Process command**
+--
 1. ps - provide process information PID, timestamp, cmd
 2. ps aux -detail description of process as PID, CPU Memory usage ,user
 3. top - interactive process viewver - total process as per state running, zombies and other info
