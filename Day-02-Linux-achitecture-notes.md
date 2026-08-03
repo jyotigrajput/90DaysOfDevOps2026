@@ -35,7 +35,6 @@ How process are created and managed ?
                   kernal will assign PID
                           |
                   process start running
-```
 
 **Process State**
 1. Running- Currently in progress
@@ -45,23 +44,23 @@ How process are created and managed ?
 
 **Process command**
 --
-1. ps - provide process information PID, timestamp, cmd
-2. ps aux -detail description of process as PID, CPU Memory usage ,user
-3. top - interactive process viewver - total process as per state running, zombies and other info
-4. htop - give you option to monitor the system, use some keys like
+1. **ps** - provide process information PID, timestamp, cmd
+2. **ps aux** -detail description of process as PID, CPU Memory usage ,user
+3. **top** - interactive process viewver - total process as per state running, zombies and other info
+4. **htop** - give you option to monitor the system, use some keys like
           F1- open help menu,
           F3 '/' - search specific character
           F4 Search the process with keyword
           F6 - Sort process by columns CPI, memory usage
           F9 - kill the process
           F10/Q - Quit and exit program
-5. pgrep <process name> - find process id with name / ps aux | grep 'cron'
-6. pkill <process name> - send signal by process name
-7. kill <PID> terminate the process by PID
-8. nice - Setting priority of new process (use ps -l command to view priority column NI) 
-9. renice -n 10 -p PID - adjust priority for running process
-10. jobs - show active running jobs
-11. bg %<jobid> - resume pause job and run it backgroun
-12. fg %<jobid> - resume job in foreground 
+5. **pgrep** <process name> - find process id with name / ps aux | grep 'cron'
+6. **pkill** <process name> - send signal by process name
+7. **kill** <PID> terminate the process by PID
+8. **nice** - Setting priority of new process (use ps -l command to view priority column NI) 
+9. **renice** -n 10 -p PID - adjust priority for running process
+10. **jobs** - show active running jobs
+11. **bg** %<jobid> - resume pause job and run it backgroun
+12. **fg** %<jobid> - resume job in foreground 
 
 
