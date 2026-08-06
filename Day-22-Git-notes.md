@@ -71,4 +71,6 @@ Adding demo.txt
        -  .git folder contain git repo information as commit history,index,head information and by deleting it will erase history
     
 5. What is the difference between a working directory, staging area, and repository?
-        - working directory - 
+        1. working directory - in which we can modified the file
+        2. staging area - buffer area before commit (files created for commit)
+        3. repository - local directory with .git folder
