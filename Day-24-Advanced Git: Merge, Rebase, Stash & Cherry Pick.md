@@ -30,11 +30,13 @@
        $ git rebase merge
     ```
 4. Observe your `git log --oneline --graph --all` — how does the history look compared to a merge?
-       - `$git log --oneline --graph --all` - It shows visual history of all branches
+   - It shows visual history of all branches
    - What does rebase actually do to your commits?
-      - timeline or sequence will be maintained from refernce branch 
+      - timeline or sequence will be maintained from refernace branch 
    - How is the history different from a merge?
+       -  rebase gives straight history while merge create new merge commit
    - Why should you **never rebase commits that have been pushed and shared** with others?
+       - 
    - When would you use rebase vs merge?
 
 ---
